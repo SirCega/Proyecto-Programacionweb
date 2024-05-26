@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fondo">
+    <div class="container">
+        <a class="titulo">
+            <h1 class="borde">~The Avengers Rancing~</h1>
+        </a>
+        
+        <form id="product-form">
+            <input type="hidden" id="product-id">
+
+            <label for="presupuesto">Presupuesto:</label>
+            <input type="text" id="presupuesto" name="presupuesto" required oninput="cambiarColor('presupuesto')">
+
+            <label for="unidad">Unidad:</label>
+            <input type="text" id="unidad" name="unidad" required oninput="cambiarColor('unidad')">
+
+            <label for="producto">Producto:</label>
+            <input type="text" id="producto" name="producto" required oninput="cambiarColor('producto')">
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required oninput="cambiarColor('cantidad')">
+
+            <label for="valor-unitario">Valor Unitario:</label>
+            <input type="number" id="valor-unitario" name="valor-unitario" required oninput="cambiarColor('valor-unitario')">
+
+            
+
+            <label for="fecha-adquisicion">Fecha de Adquisición:</label>
+            <input type="date" id="fecha-adquisicion" name="fecha-adquisicion" required oninput="cambiarColor('fecha-adquisicion')">
+
+            <label for="proveedor">Proveedor:</label>
+            <input type="text" id="proveedor" name="proveedor" required oninput="cambiarColor('proveedor')">
+
+            <button  class="boton" type="submit">Guardar Producto</button>
+        </form>
+        <div id="products-container"></div>
+    </div>
+    <script src="script.js"></script>
+    </script>
+</body>
+</html>
